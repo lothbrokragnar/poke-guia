@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="pokemon--image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="">
+    <h1>PokeGuía</h1>
+    <poke-guia></poke-guia>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokeGuia from './components/PokeGuia.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PokeGuia
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Press Start 2P', cursive;
+}
+p{
+  margin: 0;
+}
+.pokemon--image{
+  width: 400px;
+  margin: 40px 0;
+}
+h1{
+  margin: 40px 0;
 }
 </style>
